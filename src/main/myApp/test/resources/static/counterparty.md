@@ -1,0 +1,1 @@
+As a static data user I want to be sure I can create a counterparty and retrieve the name as Cedric

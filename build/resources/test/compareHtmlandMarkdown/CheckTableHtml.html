@@ -1,0 +1,35 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<body>
+
+<div concordion:example="assert equal">
+<p>  <h3>Assert Equal</h3>
+    For trade  <span concordion:set="#externalRef">KIM1</span> I want to return <span concordion:assert-equals="getTradeAmount(#externalRef)">1979</span>
+</p>
+</div>
+
+<div concordion:example="execute">
+<p>  <h3>Execute</h3>
+    For trade  <span concordion:set="#externalRef">KIM1</span> I want to <span concordion:execute="#result = getTradeAmount(#externalRef)"> return </span><span concordion:assert-equals="#result">1979</span>
+</p>
+</div>
+
+<div concordion:example="table">
+  <h3>Examples</h3>
+    <table concordion:execute="#result = getTradeAmount(#externalRef)">
+        <tr>
+            <th concordion:set="#externalRef">Full Name</th>
+            <th concordion:assert-equals="#result">First Name</th>
+        </tr>
+        <tr>
+            <td>CED1</td>
+            <td>1978</td>
+        </tr>
+        <tr>
+            <td>KIM1</td>
+            <td>1979</td>
+        </tr>
+    </table>
+</div>
+</body>
+
+</html>

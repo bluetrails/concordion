@@ -1,0 +1,26 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<body>
+<div concordion:example="simple-names">
+
+    <h3>Examples</h3>
+
+    <table concordion:execute="#result = getTradeAmount(#externalRef)">
+        <tr>
+            <th concordion:set="#externalRef">Full Name</th>
+            <th concordion:assert-equals="#result">First Name</th>
+
+        </tr>
+        <tr>
+            <td>CED1</td>
+            <td>1978</td>
+
+        </tr>
+        <tr>
+            <td>KIM1</td>
+            <td>1979</td>
+        </tr>
+    </table>
+</div>
+</body>
+
+</html>

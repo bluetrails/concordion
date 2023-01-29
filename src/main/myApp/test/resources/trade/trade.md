@@ -1,0 +1,1 @@
+As a backoffice I want to be sure that I can create a trade and retrieve the trade id as 123
