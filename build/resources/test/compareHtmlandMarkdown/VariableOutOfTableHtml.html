@@ -1,0 +1,26 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<body>
+
+<div concordion:example="table and use variable afterwards">
+  <h3>Examples</h3>
+    <table concordion:execute="#result = getTradeAmount(#externalRef)">
+        <tr>
+            <th concordion:set="#externalRef">Ext Ref</th>
+        </tr>
+        <tr>
+            <td>CED1</td>
+        </tr>
+    </table>
+
+
+
+
+<p>
+<h3>Assert Equal</h3>
+    For trade from table I want to return <span concordion:assert-equals="getTradeAmount(#externalRef)">1978</span>
+</p>
+</div>
+
+</body>
+
+</html>
